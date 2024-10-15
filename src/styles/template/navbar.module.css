@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #C0EBA6;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 10%;
+    min-height: 600px;
+    border: 1px solid black;
+    border-left: none;
+    border-bottom-right-radius: 50px;
+}
+
+.navtext {
+    margin-top: 170px;
+    text-align: center;
+    color: #347928;
+    font-size: 2vw;
+}

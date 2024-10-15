@@ -1,0 +1,34 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #DCFF92;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 90%;
+    max-width: 200px;
+    height: 90%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: calc(12px + 8 * (100vw - 320px) / 880);
+    color: #347928;
+    font-family: 'inter';
+}
