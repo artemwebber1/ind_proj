@@ -1,7 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import s from '../../styles/template/navbar.module.css'
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [mobNavBar, setMobNavbar] = useState(false);
+
     return (
         <div className={s.navbar}>
             <div className={s.desktopNavbar}>
@@ -14,9 +17,12 @@ const Navbar = () => {
                 <p className={s.navtext}>
                     Навигация
                 </p>
-                <button className={s.openMobileNavbarBtn}>
-                    Раскрыть
-                </button>
+                <div className={s.mobNavItems}>
+                    <button className={s.openMobileNavbarBtn} onClick={() => setMobNavbar(!mobNavBar)}>
+                        { mobNavBar ? 'Свернуть' : 'Раскрыть' }
+                    </button>
+                    { mobNavBar ? <NavItems /> : null }
+                </div>
             </div>
         </div>
     )
