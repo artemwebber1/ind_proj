@@ -1,0 +1,17 @@
+.homeWrapper {
+    display: block;
+    margin: 0 auto;
+}
+
+.schoolPhoto {
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+    margin: 10px auto 20px;
+}
+
+@media screen and (width <= 660px) {
+    .schoolPhoto {
+        width: 80%;
+    }
+}

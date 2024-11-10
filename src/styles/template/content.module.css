@@ -1,3 +1,10 @@
 .contentWrapper {
-    margin-left: 250px;
+    padding-top: 140px;
+}
+
+@media screen and (width <= 660px){
+    .contentWrapper {
+        padding-top: 200px;
+        margin-left: 10px;
+    }
 }

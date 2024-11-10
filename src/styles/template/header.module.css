@@ -1,11 +1,13 @@
 .header {
-    padding-top: 20px;
+    position: absolute;
+    width: 100%;
     padding-bottom: 20px;
     background-color: #DCFF92;
     border: 1px solid black;
     border-top: none;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    z-index: 2;
 }
 
 .headerContent {
