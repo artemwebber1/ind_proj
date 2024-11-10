@@ -32,22 +32,24 @@ export default Navbar;
 
 const NavItems = () => {
     return (
-        <ul className={s.navitemsWrapper}>
-            <li className={s.navitem}>
-                <NavLink to={'/'} className={s.navitemLink}>
-                    Главная
-                </NavLink>
-            </li>
-            <li className={s.navitem}>
-                <NavLink to={'/about'} className={s.navitemLink}>
-                    Сведения об образовательной организации
-                </NavLink>
-            </li>
-            <li className={s.navitem}>
-                <NavLink to={'/news'} className={s.navitemLink}>
-                    Новости
-                </NavLink>
-            </li>
-        </ul>
+        <nav>
+            <ul className={s.navitemsWrapper}>
+                <li className={s.navitem}>
+                    <NavLink to={'/'} className={s.navitemLink}>
+                        Главная
+                    </NavLink>
+                </li>
+                <li className={s.navitem}>
+                    <NavLink to={'/about'} className={s.navitemLink}>
+                        Сведения об образовательной организации
+                    </NavLink>
+                </li>
+                <li className={s.navitem}>
+                    <NavLink to={'/news'} className={s.navitemLink}>
+                        Новости
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
     )
 }

@@ -1,14 +1,13 @@
 .navbar {
     background-color: #C0EBA6;
-    position: absolute;
-    top: 0;
-    z-index: -1;
     border: 1px solid black;
     border-left: none;
     border-bottom-right-radius: 50px;
     width: 25%;
     min-width: 160px;    
     max-width: 300px;
+    float: left;
+    margin-right: 10px;
 }
 
 .desktopNavbar {
@@ -18,7 +17,7 @@
 }
 
 .navtext {
-    margin-top: 170px;
+    margin-top: 140px;
     margin-bottom: 20px;
     text-align: center;
     color: #347928;
@@ -55,9 +54,18 @@
 .openMobileNavbarBtn {
     text-align: center;
     margin-left: 10%;
+    background-color: #8BD013;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 @media screen and (width <= 660px){
+    .navbar {
+        float: none;
+        position: absolute;
+    }
+
     .mobileNavbar {
         display: block;
     }
@@ -75,7 +83,7 @@
     }
 
     .navtext {
-        margin-top: 140px;
+        margin-top: 120px;
         margin-bottom: 10px;
     }
 }
